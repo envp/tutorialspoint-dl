@@ -25,7 +25,7 @@ pdf_links = Array.new(link_count) { nil }
 
 for i in 0..link_count
   # @bug possible html -> pdfl
-  # @fix later
+  # @fix done, updated regex
   raw_link = links[i]['href'] unless links[i].nil?
 
   # Experimenting with long stuff
@@ -33,7 +33,7 @@ for i in 0..link_count
     split('/').
     insert(2, 'pdf').
     join('/').
-    gsub('htm', 'pdf')
+    gsub(/htm(l)?/, 'pdf')
 end
 
 for i in 0..link_count
