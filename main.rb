@@ -1,3 +1,5 @@
+#!/usr/bin/ruby -w
+
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
