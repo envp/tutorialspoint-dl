@@ -1,0 +1,31 @@
+# Simplified gitignore created by David Tran (unsignedzero)
+
+# Vim cache files (end in ~)
+*.*~
+
+# Ignores gitmsg which I use to store and edit my commit messaegs.
+gitmsg
+
+# Mac OS X
+.DS_Store
+profile
+
+# Windows
+*.dat
+*.exe
+
+# Generated files
+log
+log/
+
+logs
+logs/
+
+out/
+out
+
+# Backup files
+*.bku
+*.bku~
+*~.nib
+
