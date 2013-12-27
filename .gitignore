@@ -32,3 +32,6 @@ nbproject/
 *.bku~
 *~.nib
 *.backup
+
+# Downloaded PDF files
+*.pdf
