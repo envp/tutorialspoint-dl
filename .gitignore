@@ -24,8 +24,11 @@ logs/
 out/
 out
 
+nbproject/
+
+
 # Backup files
 *.bku
 *.bku~
 *~.nib
-
+*.backup

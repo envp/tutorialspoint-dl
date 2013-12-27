@@ -12,13 +12,9 @@ DOMAIN = 'www.tutorialspoint.com'
 links = Nokogiri::HTML(open(PROTOCOL << '://' << DOMAIN << '/cplusplus/index.htm')).css('div#leftcol > ul.menu > li > a')
 
 # Filter out anything that is not course material
-links = links.map { |link| link if link['href'].include?('cplusplus')}
+links = links.select { |link| link if link['href'].include?('cplusplus')}
 
-# Get rid of nils at the end of the Array
-while links[-1].nil?
-  links.pop
-end
-
+# Get number of links
 link_count = links.length
 
 pdf_links = Array.new(link_count) { nil }
