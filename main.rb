@@ -34,7 +34,7 @@ end
 
 for i in 0..link_count
   filename = (i + 1).to_s << '-' << pdf_links[i].split('/')[3]
-  Net::HTTP.start('www.tutorialspoint.com') do |http|
+  Net::HTTP.start(DOMAIN) do |http|
     response = http.get(pdf_links[i])
     open(filename, 'wb') do |file|
       file.write(response.body)
