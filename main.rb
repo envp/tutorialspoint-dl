@@ -2,14 +2,13 @@
 
 require 'rubygems'
 require 'nokogiri'
-require 'open-uri'
 require 'net/http'
 
 PROTOCOL = 'http'
 DOMAIN = 'www.tutorialspoint.com'
 
 # remote is too slow, try to implement later for local copy
-links = Nokogiri::HTML(open(PROTOCOL << '://' << DOMAIN << '/cplusplus/index.htm')).css('div#leftcol > ul.menu > li > a')
+links = Nokogiri::HTML(Net::HTTP.get(DOMAIN, '/cplusplus/index.htm')).css('div#leftcol > ul.menu > li > a')
 
 # Filter out anything that is not course material
 links = links.select { |link| link if link['href'].include? 'cplusplus'}
