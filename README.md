@@ -14,9 +14,9 @@ Created by unsignedzero and vaibhav-y on 12-24-2013 as an idea.
 
 Run
 ===
-In the project root:
+In the project root, look for the Rakefile, and edit it as per:
 
-`ruby tutorialspoint-dl.rb "subject"`
+`ruby "tutorialspoint-dl.rb \"subject\""`
 
 Where subject is one of:
 
