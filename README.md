@@ -8,6 +8,8 @@ Created by unsignedzero and vaibhav-y on 12-24-2013 as an idea.
 * This is the lazy man's alternative to visiting the website itself:
 * This script fetches pdfs for a particular course from [Tutorials Point](www.tutorialspoint.com) and has been written solely for educational purposes
 * Surprise: Tutorialspoint already provides pdfs (in the near future)
+
+
 ------
 
 Run
