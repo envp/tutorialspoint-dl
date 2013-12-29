@@ -1,14 +1,20 @@
 # Tutorial Point DL Tool #
-
+[![Build Status](https://travis-ci.org/vaibhav-y/tutorialspoint-dl.png?branch=master)](https://travis-ci.org/vaibhav-y/tutorialspoint-dl)
 Created by unsignedzero and vaibhav-y and started on 12-24-2013 as an idea.
 
-# TO DO #
+------
 
-* Updated main.rb
+TO DO
+=====
+* Implement progress bar for downloader
+* Use Rack/RSpec for TDD
 
 # Version/Changelog #
 
-# 0.1.0.0 #
+0.2-beta
+========
+*
+* R
 * Refactored into function and renamed file.
 * Cleaned up code so 80 character or less.
 * Swapping to Net::HTTP, over Open-URI
