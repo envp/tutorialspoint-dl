@@ -14,7 +14,7 @@ Run
 ===
 In the project root:
 
-`tutorialspoint-dl "subject"`
+`ruby tutorialspoint-dl.rb "subject"`
 
 Where subject is one of:
 
