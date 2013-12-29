@@ -13,8 +13,7 @@ TO DO
 
 0.2-beta
 ========
-*
-* R
+* Completely refactored code, ready for Rack test and CI
 * Refactored into function and renamed file.
 * Cleaned up code so 80 character or less.
 * Swapping to Net::HTTP, over Open-URI
