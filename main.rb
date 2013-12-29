@@ -4,7 +4,6 @@ require 'rubygems'
 require 'nokogiri'
 require 'net/http'
 
-PROTOCOL = 'http'
 DOMAIN = 'www.tutorialspoint.com'
 
 # remote is too slow, try to implement later for local copy
@@ -35,8 +34,6 @@ for i in 0..link_count
   filename = (i + 1).to_s << '-' << pdf_links[i].split('/')[3]
   Net::HTTP.start(DOMAIN) do |http|
     response = http.get(pdf_links[i])
-    open(filename, 'wb') do |file|
-      file.write(response.body)
-    end
+    open(filename, 'wb') { |file| file.write(response.body) }
   end
 end
