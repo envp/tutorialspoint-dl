@@ -2,6 +2,7 @@ tutorialspoint-dl
 =================
 
 [![Build Status](https://travis-ci.org/vaibhav-y/tutorialspoint-dl.png?branch=master)](https://travis-ci.org/vaibhav-y/tutorialspoint-dl)
+[![Code Climate](https://codeclimate.com/github/vaibhav-y/tutorialspoint-dl.png)](https://codeclimate.com/github/vaibhav-y/tutorialspoint-dl)
 
 Created by unsignedzero and vaibhav-y on 12-24-2013 as an idea.
 
